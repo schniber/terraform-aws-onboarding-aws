@@ -84,7 +84,7 @@ module "onboarding" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_deployment_strategy"></a> [deployment\_strategy](#input\_deployment\_strategy) | Orca Security Deployment Strategy. | `string` | n/a | yes |
+| <a name="input_deployment_strategy"></a> [deployment\_strategy](#input\_deployment\_strategy) | Orca Security Deployment Strategy. | `string` | `"SaaS"` | no |
 | <a name="input_enable_rds_access"></a> [enable\_rds\_access](#input\_enable\_rds\_access) | Whether to enable RDS Access to Orca Security or not. | `bool` | `true` | no |
 | <a name="input_enable_secrets_manager_access"></a> [enable\_secrets\_manager\_access](#input\_enable\_secrets\_manager\_access) | Whether to enable Secrets Manager Access to Orca Security or not. | `bool` | `true` | no |
 | <a name="input_external_id"></a> [external\_id](#input\_external\_id) | External ID provided by Orca Security. | `string` | n/a | yes |

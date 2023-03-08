@@ -12,6 +12,7 @@ variable "external_id" {
 variable "deployment_strategy" {
   description = "Orca Security Deployment Strategy."
   type        = string
+  default     = "SaaS"
   validation {
     condition = contains(
       [
