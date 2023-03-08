@@ -10,7 +10,6 @@ This module allows to onboard an AWS Account either through SaaS Scanning or In-
 
  ```hcl
 module "onboarding" {
-  module "orca_security_onboarding" {
   source = "git::https://github.com/terraform-orca/terraform-aws-onboarding-aws.git?ref=v0.0.1"
 
   iam_path    = var.iam_path
