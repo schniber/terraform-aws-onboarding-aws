@@ -50,7 +50,7 @@ module "onboarding" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.57.1 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.47.0 |
 
 ## Modules
 
@@ -85,8 +85,8 @@ module "onboarding" {
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_deployment_strategy"></a> [deployment\_strategy](#input\_deployment\_strategy) | Orca Security Deployment Strategy. | `string` | n/a | yes |
-| <a name="input_enable_rds_access"></a> [enable\_rds\_access](#input\_enable\_rds\_access) | Whether to enable RDS Access to Orca Security or not. | `bool` | `false` | no |
-| <a name="input_enable_secrets_manager_access"></a> [enable\_secrets\_manager\_access](#input\_enable\_secrets\_manager\_access) | Whether to enable Secrets Manager Access to Orca Security or not. | `bool` | `false` | no |
+| <a name="input_enable_rds_access"></a> [enable\_rds\_access](#input\_enable\_rds\_access) | Whether to enable RDS Access to Orca Security or not. | `bool` | `true` | no |
+| <a name="input_enable_secrets_manager_access"></a> [enable\_secrets\_manager\_access](#input\_enable\_secrets\_manager\_access) | Whether to enable Secrets Manager Access to Orca Security or not. | `bool` | `true` | no |
 | <a name="input_external_id"></a> [external\_id](#input\_external\_id) | External ID provided by Orca Security. | `string` | n/a | yes |
 | <a name="input_iam_path"></a> [iam\_path](#input\_iam\_path) | Path for IAM Roles and Policies | `string` | `"/"` | no |
 | <a name="input_orca_security_client_policy_name"></a> [orca\_security\_client\_policy\_name](#input\_orca\_security\_client\_policy\_name) | Orca Security Client Policy Name. | `string` | `"OrcaSecurityPolicy"` | no |
@@ -107,4 +107,5 @@ module "onboarding" {
 | Name | Description |
 |------|-------------|
 | <a name="output_orca_security_role_arn"></a> [orca\_security\_role\_arn](#output\_orca\_security\_role\_arn) | Orca Security Role ARN |
+| <a name="output_orca_security_side_scanner_role_arn"></a> [orca\_security\_side\_scanner\_role\_arn](#output\_orca\_security\_side\_scanner\_role\_arn) | Orca Security Side Scanner Role ARN |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
